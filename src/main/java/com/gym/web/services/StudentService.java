@@ -1,5 +1,6 @@
 package com.gym.web.services;
 
+import com.gym.web.entities.PhysicalAssessment;
 import com.gym.web.entities.Student;
 import com.gym.web.models.StudentModel;
 import com.gym.web.repositories.StudentRepository;
@@ -26,6 +27,12 @@ public class StudentService {
         student.setNeighborhood(studentModel.getNeighborhood());
 
         return studentRepository.save(student);
+    }
+
+    public List<PhysicalAssessment> getAllStudentPhysicalAssessment(Long studentId) {
+        Student student = studentRepository.findById(studentId).get();
+
+        return student.getPhysicalAssessments();
     }
 
 }
