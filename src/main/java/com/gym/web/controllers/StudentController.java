@@ -20,7 +20,7 @@ public class StudentController {
     }
 
     @PostMapping
-    public Student addStudent(@RequestBody StudentModel studentModel){
+    public Student createStudent(@RequestBody StudentModel studentModel){
         return studentService.create(studentModel);
     }
 }
