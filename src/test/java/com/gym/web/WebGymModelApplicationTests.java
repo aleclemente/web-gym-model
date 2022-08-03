@@ -1,4 +1,4 @@
-package com.gym.web.webgymmodel;
+package com.gym.web;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

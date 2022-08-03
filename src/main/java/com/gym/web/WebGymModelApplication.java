@@ -1,4 +1,4 @@
-package com.gym.web.webgymmodel;
+package com.gym.web;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
